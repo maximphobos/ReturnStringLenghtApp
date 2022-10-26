@@ -1,2 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿while (true)
+{
+    string userEnteredString = String.Empty;
+
+    while (string.IsNullOrWhiteSpace(userEnteredString))
+    {
+        Console.Write("Please, enter any string (no empty or just spaces):");
+        userEnteredString = Console.ReadLine();
+    }
+
+    string trimmedUserEnteredString = userEnteredString.Trim();
+
+    int userEnteredStringLenght = trimmedUserEnteredString.Length;
+
+    Console.Write($"You've entered string: '{trimmedUserEnteredString}' which lenght is " +
+        $"{userEnteredStringLenght} {(userEnteredStringLenght > 1 ? "characters (incl spaces)" : "character")}.");
+    Console.WriteLine();
+}
