@@ -16,5 +16,3 @@
         $"{userEnteredStringLenght} {(userEnteredStringLenght > 1 ? "characters (incl spaces)" : "character")}.");
     Console.WriteLine();
 }
-
-//Just to check if 'Build the console app' GitHub action starts after push the commit with this test change
